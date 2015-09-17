@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :links do
     member do
       put "like" => "links#upvote"
+      put "dislike" => "links#downvote"
     end
   end
 
